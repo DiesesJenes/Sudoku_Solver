@@ -39,7 +39,7 @@ def solve():
         for row in range(0, 9):
                 for column in range(0, 9):
                         if grid[row][column] == 0:
-                                for number in range (1, 10):
+                                for number in range(1, 10):
                                         if possible(row, column, number):
                                                 grid[row][column] = number
                                                 solve()
